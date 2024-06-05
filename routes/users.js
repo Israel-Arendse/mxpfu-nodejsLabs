@@ -31,15 +31,15 @@ router.get("/", (req,res)=>{
 // GET by specific ID request: Retrieve a single user with email ID
 router.get("/:email",(req,res)=>{
   const email = req.params.email;
-  let filtered_users = users.filter((user) => user.email === email);
+  let filtered_users = users.filter((user) => user.email === email); //Filters the users by their email.
   res.send(filtered_users);
 });
 
 
 // POST request: Create a new user
 router.post("/",(req,res)=>{
-  // Copy the code here
-  res.send("Yet to be implemented")//This line is to be replaced with actual return value
+   users.push({"firstName":req.query.firstName, "lastName":req.query.lastName,"email":req.query.email,"DOB":req.query.DOB}); // Adds a new directory to the list of users
+   res.send("The user" + ('')+(req.query.firstName) + "Has been added!")// Returns the firstName value
 });
 
 

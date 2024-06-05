@@ -35,7 +35,7 @@ app.use("/user", routes);
 app.post("/login", (req,res) => {
     const user = req.body.user;
     if (!user) {
-        return res.status(404).json({message: "Body Empty"});
+        return res.status(404).json({message: "User unable to log in"});
     }
     let accessToken = jwt.sign({
         data: user

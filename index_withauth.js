@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('./routes/users.js');
+const routes = require('./routes/users.js').default;
 const jwt = require('jsonwebtoken');
 const session = require('express-session')
 

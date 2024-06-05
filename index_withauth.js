@@ -6,7 +6,7 @@ const session = require('express-session')
 const app = express();
 const PORT =5000;
 
-app.use(session({secret:"fingerpint",resave: true, saveUninitialized: true}))
+app.use(session({secret:"fingerprint",resave: true, saveUninitialized: true}))
 
 app.use(express.json());
 

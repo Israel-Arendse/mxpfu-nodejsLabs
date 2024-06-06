@@ -22,7 +22,7 @@ app.use("/user", (req,res,next)=>{
                next();
            }
            else{
-               return res.status(401).json({message: "User not authenticated"})
+               return res.status(403).json({message: "User not authenticated"})
            }
         });
     } else {

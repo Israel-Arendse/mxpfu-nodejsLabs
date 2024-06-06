@@ -41,8 +41,7 @@ router.get("/:email",(req,res)=>{
   res.send(filtered_users);
 });
 
-//GET by specific lastName request: Retrieve all users with a particular Last Name
-    // GET users with a particular Last Name eg. 'Smith'
+//GET by specific lastName request: Retrieve all users with a particular Last Name eg 'smith'
     router.get("/lastName/:lastName",(req,res)=>{
         const lastName = req.params.lastName;
         let filtered_lastname = users.filter((user) => user.lastName === lastName);

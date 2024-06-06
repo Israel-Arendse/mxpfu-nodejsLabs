@@ -10,6 +10,12 @@ let users = [
         DOB:"22-01-1990",
     },
     {
+        firstName: "Helen",
+        lastName: "wick",
+        email:"johnwick@gamil.com",
+        DOB:"22-01-1990",
+    },
+    {
         firstName: "John",
         lastName: "smith",
         email:"johnsmith@gamil.com",

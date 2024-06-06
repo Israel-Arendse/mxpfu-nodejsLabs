@@ -13,7 +13,7 @@ let users = [
         firstName: "Helen",
         lastName: "wick",
         email:"helenwick@gamil.com",
-        DOB:"20-01-1990",
+        DOB:"20-01-1991",
     },
     {
         firstName: "John",
